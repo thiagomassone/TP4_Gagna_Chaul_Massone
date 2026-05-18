@@ -27,9 +27,9 @@ Mateo Chaul \- 61036
 
 ## **Consigna 1**
 
-# La base de datos planteada es una base de datos relacional. 
+ La base de datos planteada es una base de datos relacional. 
 
-# Desde el punto de vista de su propósito, se puede clasificar como una base de datos operativa porque está diseñada para gestionar transacciones diarias del centro médico, cómo registro de pacientes, consultas médicas, emisión de recetas. Además tiene un componente de soporte a la toma de decisiones, ya que permite análisis estadísticos, distribución por sexo, ciudad y especialidad.
+ Desde el punto de vista de su propósito, se puede clasificar como una base de datos operativa porque está diseñada para gestionar transacciones diarias del centro médico, cómo registro de pacientes, consultas médicas, emisión de recetas. Además tiene un componente de soporte a la toma de decisiones, ya que permite análisis estadísticos, distribución por sexo, ciudad y especialidad.
 
 ## **Consigna 2**
 
