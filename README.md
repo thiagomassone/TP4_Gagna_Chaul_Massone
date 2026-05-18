@@ -1,7 +1,7 @@
 # TP N°4: Bases de datos y manejo de versiones
 
 <p align="center">
-  <img src="assets/itba.png" alt="ITBA" width="220"/>
+  <img width="351" height="173" alt="image" src="https://github.com/user-attachments/assets/acff4f97-07dc-4e86-b9b5-d3abf76122bc" />
 </p>
 
 ## Curso: Informática Médica - 16.22
