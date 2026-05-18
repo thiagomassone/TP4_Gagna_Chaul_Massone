@@ -1,6 +1,6 @@
 # *TP N°4: Bases de datos y manejo de versiones*
 
-![][images/image_1.png]  
+![Imagen 1][images/image_1.png]  
 **Curso:** Informática Médica \- 16.22  
 **Grupo 1**
 
@@ -33,13 +33,13 @@ Mateo Chaul \- 61036
 
 ## **Consigna 2**
 
-![][images/image_2.png]
+![Imagen 2][images/image_2.png]
 
 ## 
 
 ## **Consigna 3**
 
-![][images/image_3.png]
+![Imagen 3][images/image_3.png]
 
 ## **Consigna 4**
 
@@ -106,7 +106,7 @@ FROM Pacientes;
 
  
 
-![][images/image_4.png]
+![Imagen 4][images/image_4.png]
 
 ## **Consigna 3: Pacientes menores de edad**
 
@@ -116,7 +116,7 @@ SELECT nombre, edad
 FROM vista\_pacientes  
 WHERE edad \< 18;
 
- ![][images/image_5.png]
+ ![Imagen 5][images/image_5.png]
 
 ## **Consigna 4: Actualización de dirección de Luciana Gómez**
 
@@ -124,7 +124,7 @@ UPDATE Pacientes
 SET calle \= 'Calle Corrientes', numero \= '500', ciudad \= 'Buenos Aires'  
 WHERE nombre \= 'Luciana Gómez';
 
-![][images/image_6.png]
+![Imagen 6][images/image_6.png]
 
 ## 
 
@@ -136,7 +136,7 @@ SELECT nombre, matricula
 FROM Medicos  
 WHERE especialidad\_id \= 4;
 
- ![][images/image_7.png]
+ ![Imagen 7][images/image_7.png]
 
 ## **Consigna 6: Pacientes que viven en Buenos Aires**
 
@@ -148,7 +148,7 @@ SELECT nombre, calle, numero, ciudad
 FROM Pacientes  
 WHERE UPPER(ciudad) LIKE '%BUENOS AIRES%';
 
- ![][images/image_8.png]
+ ![Imagen 8][images/image_8.png]
 
 ## 
 
@@ -182,7 +182,7 @@ WHERE UPPER(TRIM(ciudad)) LIKE '%ROSARIO%';
 UPDATE Pacientes SET ciudad \= 'Santa Fe'  
 WHERE UPPER(TRIM(ciudad)) LIKE '%SANTA FE%';
 
- ![][images/image_9.png]
+ ![Imagen 9][images/image_9.png]
 
 ## 
 
@@ -195,7 +195,7 @@ FROM Pacientes
 GROUP BY ciudad  
 ORDER BY cantidad\_pacientes DESC;
 
- ![][images/image_10.png]
+ ![Imagen 10][images/image_10.png]
 
 ## **Consigna 9: Cantidad de pacientes por sexo en cada ciudad**
 
@@ -209,7 +209,7 @@ INNER JOIN SexoBiologico s ON p.id\_sexo \= s.id\_sexo
 GROUP BY p.ciudad, s.descripcion  
 ORDER BY p.ciudad;
 
- ![][images/image_11.png]
+ ![Imagen 11][images/image_11.png]
 
 ## 
 
@@ -223,7 +223,7 @@ LEFT JOIN Recetas r ON r.id\_medico \= m.id\_medico
 GROUP BY m.id\_medico, m.nombre   
 ORDER BY total\_recetas DESC;
 
- ![][images/image_12.png]
+ ![Imagen 12][images/image_12.png]
 
 ## **Consigna 11: Consultas del médico ID=3 en agosto 2024**
 
@@ -234,7 +234,7 @@ FROM Consultas
 WHERE id\_medico \= 3  
 AND fecha BETWEEN '2024-08-01' AND '2024-08-31';
 
- ![][images/image_13.png]
+ ![Imagen 13][images/image_13.png]
 
 ## 
 
@@ -247,7 +247,7 @@ FROM Consultas c
 INNER JOIN Pacientes p ON c.id\_paciente \= p.id\_paciente  
 WHERE c.fecha BETWEEN '2024-08-01' AND '2024-08-31';
 
- ![][images/image_14.png]
+ ![Imagen 14][images/image_14.png]
 
 ## **Consigna 13: Medicamentos recetados más de una vez por el médico ID=2**
 
@@ -262,7 +262,7 @@ WHERE r.id\_medico \= 2
 GROUP BY m.id\_medicamento, m.nombre  
 HAVING veces\_recetado \> 1;
 
- ![][images/image_15.png]
+ ![Imagen 15][images/image_15.png]
 
 ## 
 
@@ -276,9 +276,9 @@ LEFT JOIN Recetas r ON p.id\_paciente \= r.id\_paciente
 GROUP BY p.id\_paciente, p.nombre  
 ORDER BY total\_recetas DESC;
 
- ![][images/image_16.png]
+ ![Imagen 16][images/image_16.png]
 
-![][images/image_17.png]
+![Imagen 17][images/image_17.png]
 
 ## **Consigna 15: Medicamento más recetado**
 
@@ -293,7 +293,7 @@ GROUP BY m.id\_medicamento, m.nombre
 ORDER BY total\_recetas DESC  
 LIMIT 1;
 
- ![][images/image_18.png]
+ ![Imagen 18][images/image_18.png]
 
 ## 
 
@@ -309,7 +309,7 @@ FROM pacientes p
 INNER JOIN consultas c ON p.id\_paciente \= c.id\_paciente  
 ORDER BY p.id\_paciente, c.fecha DESC;
 
- ![][images/image_19.png]
+ ![Imagen 19][images/image_19.png]
 
 ## 
 
@@ -330,7 +330,7 @@ ORDER BY m.nombre, m.id\_medico, p.nombre, p.id\_paciente;
 
  
 
-![][images/image_20.png]
+![Imagen 20][images/image_20.png]
 
 ## 
 
@@ -354,7 +354,7 @@ med.id\_medicamento, med.nombre,
 m.id\_medico, m.nombre, p.id\_paciente, p.nombre   
 ORDER BY total\_recetas DESC; 
 
- ![][images/image_21.png]
+ ![Imagen 21][images/image_21.png]
 
 ## 
 
@@ -372,7 +372,7 @@ LEFT JOIN Consultas c ON m.id\_medico \= c.id\_medico
 GROUP BY m.id\_medico, m.nombre   
 ORDER BY total\_pacientes DESC; 
 
- ![][images/image_22.png]
+ ![Imagen 22][images/image_22.png]
 
 ## 
 
@@ -394,6 +394,6 @@ AND EXTRACT(YEAR FROM AGE(c.fecha, p.fecha\_nacimiento)) \< 18
 GROUP BY m.id\_medico, m.nombre  
 ORDER BY consultas\_menores DESC;
 
- ![][images/image_23.png]
+ ![Imagen 23][images/image_23.png]
 
 
